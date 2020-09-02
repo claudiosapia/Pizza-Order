@@ -31,22 +31,77 @@ background-color: black;
 .container {
     display: block;
     position: absolute;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Balsamiq Sans', cursive;
     color: white;
 font-weight: bolder;
     text-align: center;
-    font-family: 'Balsamiq Sans', cursive;
+    
 }
 
-.container h1 {
 
+.logo {
+}
+
+.logopic {
+    width: 150px;
+    height: 150px;
+    animation-name: animation1;
+   animation-duration: 14s;
+   animation-delay: 0.3s;
+   animation-fill-mode: forwards;
+}
+
+
+.claudio{
+    font-family: 'Indie Flower', cursive;
+    font-size: 64px;
+    color: #B0F3F1
+}
+h1 {
+    font-family: 'Krona One', sans-serif;
+    font-size: 34px;
+    ;color: red;
+}
+.container h1 {
+  border-radius: 100%;
    font-size: 64px;
    color: background-color: #a40606;
-   background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
-   color: #B0F3F1;
-   font-weight: bolder;
-   
+ 
+   animation-name: animation2;
+   animation-duration: 14s;
+   animation-delay: 0.3s;
+   animation-fill-mode: forwards;
 }
+
+
+@keyframes animation1 {
+    0%  {
+        transform:scale(0.0)  translate(10px, 0px);
+    }
+
+   50%  {
+        transform: scale(1.2) translate(20px, 30px) rotate(10deg) rotate(120deg);
+ }
+
+   100%  {
+        transform: scale(1.5) translate(30px, 50px) rotate(360deg);
+ }
+}
+
+@keyframes animation2 {
+    0%  {
+        transform:scale(0.0)  translate(32px, 23px);
+    }
+
+   50%  {
+        transform: scale(1.2) translate(70px, 10px) rotate(360deg);
+ }
+
+   100%  {
+        transform: scale(1.5) translate(120px, 10px);
+ }
+}
+
 
 
 .sauce {
