@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-  
+    <main>
     <div class="nav">
         <nav> 
             <ul class="navbar">
@@ -18,7 +18,6 @@
                       
             </ul>
         </nav>
-     </div>
 
 <div class="bg">
     <img src="pizza.jpg" width="1900px" height="50%">
@@ -135,7 +134,7 @@
         <br><br>
      
         <label for="address"> Enter your Full Address Including Postode here:</label>
-        <input type="text" name="Fullname" value="" id="Fullname">
+        <input type="text" name="address" value="" id="address">
         <br><br>
      
 
@@ -170,23 +169,25 @@
 
 
 <label for="card number">Card number</label>
-  <input type="text" name="card" value="" id="number">
+  <input name="credit-number" class="cc-number" type="tel" pattern="\d*" maxlength="19" placeholder="0000 0000 0000 0000" >
   <br><br>
 
   
-<label for="expiry date">Expiry date</label>
-<input type="datetime-local" name="date" id="">
+<label for="expiry date" class="expiry" >Expiry date</label>
+<input class="expiry" type="month" name="date" id="" placeholder="00/00">
 <br><br>
-<label for="sec"> Security Code</label>
-        <input type="password" name="sec" pattern="[a-z]{8,150}" id="password">
+<label for="sec" class="sec"> Security Code</label>
+        <input type="text" name="sec" placeholder="000" id="sec" class="sec" >
         <br><br>
 
 </fieldset>
 <button type="submit"> Submit</button>
+
+</div>
+
 </form>
 </div>
 </div>
-
-
+</main>
 </body>
 </html>
