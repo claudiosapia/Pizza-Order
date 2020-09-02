@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type= "text/css" rel="stylesheet" href="styles.css">
+    <title>Claudio's Pizza</title>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+    <div class="nav">
+        <nav> 
+            <ul class="navbar">
+                <a href="#Home"><li>Home</li></a>
+                 <a href="#About"><li>About</li></a>
+                     <a href= "#Contact"><li>Contact</li></a>
+                      
+            </ul>
+        </nav>
+     </div>
+
+<div class="bg">
+    <img src="pizza.jpg" width="1900px" height="50%">
+   
+   
+       </div>
+<div class="container">
+<h1> Claudio's Pizza</h1>
+<br><br>
+
+<form action="./payment.html">
+    <table>
+ <tr>
+     <td> <form>
+         <fieldset> <legend> Select your dough</legend>
+          
+<input type="radio" name="dough" id="italian" value="italian">
+<label for="italian">Italian</label> 
+<input type="radio" name="dough" id="classic" value="classic">Classic
+<br><br> </td>
+
+         </fieldset>
+ 
+        </tr>
+    </form>
+    </table>
+
+<br><br>
+
+
+        <fieldset>
+
+            <legend> Select your sauce</legend>
+
+            <marquee behaviour="" direction="">Try our new Italian Tomato Sauce!!!!</marquee>
+
+
+<select name="sauce" id="sauce">
+    <option value="Tomato">Original Tomato Sauce</option>
+    <option value="Italian Tomato">Italian Tomato Sauce</option>
+    <option value="No Sauce">No Sauce</option>
+</select>
+</fieldset>
+
+</form>
+
+
+<br><br><br>
+    <fieldset>
+        <legend>Select your Toppings</legend>
+
+<input type="checkbox" name="Toppings" id="olives" value="olives">
+<label for="olives"> Black Olives</label>
+<input type="checkbox" name="Toppings" id="olives" value="olives">
+<label for="olives"> Mozzarella Cheese</label>
+<input type="checkbox" name="Toppings" id="olives" value="olives">
+<label for="olives"> Fried Aubergines</label>
+<input type="checkbox" name="Toppings" id="olives" value="olives">
+<label for="olives"> Ham</label>
+<input type="checkbox" name="Toppings" id="olives" value="olives">
+<label for="olives"> Bresaola Ham</label>
+<input type="checkbox" name="Toppings" id="olives" value="olives">
+<label for="olives"> Onions</label>
+<input type="checkbox" name="Toppings" id="olives" value="olives">
+<label for="olives"> Buffalo Mozzarella</label>
+<input type="checkbox" name="Toppings" id="olives" value="olives">
+<label for="olives"> Salame</label>
+<input type="checkbox" name="Toppings" id="olives" value="olives">
+<label for="olives"> Peppers</label>
+<input type="checkbox" name="Toppings" id="olives" value="olives">
+<label for="olives"> Provolone cheese</label>
+<input type="checkbox" name="Toppings" id="olives" value="olives">
+<label for="olives"> Rocket</label>
+
+<br><br><br>
+<input type="checkbox" name="Toppings" id="olives" value="olives">
+<label for="olives"> Boiled Egg</label>
+<input type="checkbox" name="Toppings" id="olives" value="olives">
+<label for="olives"> Parmisan shavings</label>
+
+<br><br><br>
+
+</fieldset>
+
+
+<br><br><br>
+<br><br><br>
+
+<form action="payment.html" method="POST" enctype="text/plain">
+    
+    <label>Delivery Date and Time</label>
+    <input type="datetime-local" name="date" id="">
+    <br><br>
+    <h3>Please register to confirm your order</h3>
+    
+        <label for="username"> Choose a Username:</label>
+  <input type="text" name="username" value="" id="username">
+  <br><br>
+
+  <label for="email">Please enter your email</label>
+  <input type="email" name="email" id="email">
+  <br><br>
+  
+ <label for="password"> Enter your password:</label>
+        <input type="password" name="password" pattern="[a-z]{8,150}" id="password">
+        <br><br>
+
+        <label for="passwordc"> Please confirm your password: (8 charachters long min)</label>
+        <input type="password" name="passwordc"  id="passwordc">
+        <br><br>
+
+        <label for="fullname"> Enter your Full Name:</label>
+        <input type="text" name="Fullname" value="" id="Fullname">
+        <br><br>
+     
+        <label for="address"> Enter your Full Address Including Postode here:</label>
+        <input type="text" name="Fullname" value="" id="Fullname">
+        <br><br>
+     
+
+    <label for="description">Please add any special request here</label><br>
+    <textarea name="description" id="description" cols="100" rows="10"></textarea>
+
+<br><br><br>
+
+
+
+
+<div class="payment">
+<h3>Payment Method</h3>
+
+    <fieldset>
+
+        <legend> Select your card type</legend>
+
+       
+
+
+<select name="card" id="card">
+<option value="mastercard">Mastercard</option>
+<option value="visa">Visa</option>
+<option value="American Express">American Express</option>
+</select>
+<br><br>
+
+
+
+
+
+
+<label for="card number">Card number</label>
+  <input type="text" name="card" value="" id="number">
+  <br><br>
+
+  
+<label for="expiry date">Expiry date</label>
+<input type="datetime-local" name="date" id="">
+<br><br>
+<label for="sec"> Security Code</label>
+        <input type="password" name="sec" pattern="[a-z]{8,150}" id="password">
+        <br><br>
+
+</fieldset>
+<button type="submit"> Submit</button>
+</form>
+</div>
+</div>
+
+
+</body>
+</html>
